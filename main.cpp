@@ -16,8 +16,9 @@ Kartenstapel* kartenstapel;
 int main() {
 	//karte = new Karte(5, 5);
 	//karte->toString();
-	kartenstapel = new Kartenstapel();
+	kartenstapel = new Kartenstapel(); // immer daran denken neu angelegten speicher zu löschen
 	kartenstapel->takeCard().toString();
 	kartenstapel->takeCard().toString();
 	kartenstapel->takeCard().toString();
+	delete kartenstapel; 
 }
