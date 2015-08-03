@@ -22,4 +22,5 @@ std::string Spieler::toString(){
 
 Spieler::~Spieler()
 {
+	if(hand) delete hand; // ansonsten Speicherleck !!!
 }
